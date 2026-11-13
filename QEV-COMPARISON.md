@@ -33,7 +33,7 @@ Snapshot: 12 November 2026. Qev's [OpenDecisions](https://huggingface.co/dataset
 | [StartLux 1.1 4B Instant](https://huggingface.co/startlux-models/StartLux-Decision-v1.1-4B-Instant) | Qwen3.5-4B | 82.2 | — | — | 16.22 points above Qev; 19.73% relative gap |
 | [Kev 4B](https://huggingface.co/jaredpalmer/kev-4b) | Qwen3.5-4B-Base | Not verified | 74.46% | 65.70%† | Local bf16 diagnostics; public-231 6.06 points and typed-decisions 1.20 points above Qev 1.0 |
 | Qev 1.0 4B, experimental 4,096-token inference | Qwen3.5-4B | — | 75.32% | — | Same weights; long-context diagnostic, not released default |
-| [Jeff 1.1 Qwen 4B](https://huggingface.co/jgeuter/Jeff-1.1-Qwen-27B) | Qwen3.5-4B | 79.3 | — | — | 13.32 points above Qev |
+| [Jeff 1.1 Qwen 4B](https://huggingface.co/jgeuter/Jeff-1.1-Qwen-4B) | Qwen3.5-4B | 79.3 | — | — | 13.32 points above Qev |
 | [Wald 4B v2.0](https://huggingface.co/datasets/jgeuter/OpenDecisions/blob/main/README.md) | Qwen3.5-4B | 77.1 | — | — | 11.12 points above Qev; some questions use reasoning |
 | [Torchcast decision 4B v1.1](https://huggingface.co/datasets/jgeuter/OpenDecisions/blob/main/README.md) | Qwen3.5-4B | 73.5 | — | — | 7.52 points above Qev |
 | [decider 4B v2](https://huggingface.co/datasets/jgeuter/OpenDecisions/blob/main/README.md) | Qwen3.5-4B | 70.8 | — | — | 4.82 points above Qev |
