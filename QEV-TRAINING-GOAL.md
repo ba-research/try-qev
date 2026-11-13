@@ -25,6 +25,10 @@ For provisional OpenDecisions development tracking, the strongest identified 4B 
 - [ ] Train bounded 0.8B pilots, diagnose accuracy versus calibration, then train and evaluate all three tiers, adjusting data and recipe based on development evidence.
 - [ ] Perform independent frozen-test comparisons and publish new model revisions only after evidence and rights gates pass.
 
+## Candidate discovery for a second public benchmark
+
+The [Decision Index snapshot](https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/44be00f395c5af148320e9781945fe6ef4351283/data/index.json), generated 2026-11-12 12:34 UTC, identifies stronger candidates to test. Filtering the snapshot for an explicit Qwen3.5 base, model URL and nominal parameter bucket, its highest reported `public_skill` entries were [Meteor 0.8B](https://huggingface.co/chiranko/PKU-KCL-Meteor-0.8B) 58.77, [Valen 1.5 2B](https://huggingface.co/Valen-Team/Valen-Decision-1.5-2B) 61.89, and [Valen 1.5 4B](https://huggingface.co/Valen-Team/Valen-Decision-1.5-4B) 69.01. This shortlist is tied to that snapshot and filter, not a claim of global SOTA. `public_skill` is a different metric and dataset from OpenDecisions Capability: Qev has not been measured here, so no cross-benchmark gap or rank can be computed. Verify model revisions, serving modes, coverage, license and index methodology before choosing a frozen reference.
+
 ## State anchor
 
 - Ask: set and pursue training goals within 5% of same-size SOTA; disclose gaps with one comparison table per size on GitHub and Hugging Face.
