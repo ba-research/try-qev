@@ -19,7 +19,7 @@ For provisional OpenDecisions development tracking, the strongest identified 4B 
 
 ## Work sequence
 
-- [x] Publish current evidence and explicitly unknown small-model gaps on GitHub. Proposed Hugging Face card updates exist as open PRs; main-branch publication remains pending write access.
+- [x] Publish current evidence and explicitly unknown small-model gaps on GitHub and on all three Hugging Face main-branch cards.
 - [ ] Inventory candidates, revisions, licenses and compatible runtimes; run equal-input 0.8B/2B/4B baseline comparisons and publish results.
 - [ ] Resolve data rights and source-label review; freeze independent development and test sets.
 - [ ] Train bounded 0.8B pilots, diagnose accuracy versus calibration, then train and evaluate all three tiers, adjusting data and recipe based on development evidence.
@@ -28,8 +28,8 @@ For provisional OpenDecisions development tracking, the strongest identified 4B 
 ## State anchor
 
 - Ask: set and pursue training goals within 5% of same-size SOTA; disclose gaps with one comparison table per size on GitHub and Hugging Face.
-- Done: three existing Qev 1.0 adapters have development scores 46.8511 / 55.2254 / 65.9847 on OpenDecisions; GitHub's three-table disclosure is live at https://github.com/ba-research/try-qev/blob/main/QEV-COMPARISON.md. Hugging Face PRs are open at https://huggingface.co/ba-research/Qev1.0-Qwen3.5-0.8B/discussions/2, https://huggingface.co/ba-research/Qev1.0-Qwen3.5-2B/discussions/1, and https://huggingface.co/ba-research/Qev1.0-Qwen3.5-4B/discussions/1; each PR version was read back and contains all three tables.
-- Remaining: public three-table disclosures; comparable 0.8B and 2B references; reproducible competitor runs; rights-reviewed data and frozen evaluations; training and independent acceptance for all tiers.
+- Done: three existing Qev 1.0 adapters have development scores 46.8511 / 55.2254 / 65.9847 on OpenDecisions; GitHub's three-table disclosure is live at https://github.com/ba-research/try-qev/blob/main/QEV-COMPARISON.md. Hugging Face PRs 0.8B #2, 2B #1, and 4B #1 were merged through the authorized browser session; main-branch README revisions 952510a2895f3d0a429dd8e5160634d427bcf471 / 1d4176791f59b59053393759424d2d70e4ba98cb / e0e152c42aeb7a9c6aab094ab601a446a8885d8f were read back and each contains all three tables.
+- Remaining: comparable 0.8B and 2B references; reproducible competitor runs; rights-reviewed data and frozen evaluations; training and independent acceptance for all tiers.
 - Facts vs unknowns: public scores use different authors' serving settings and OpenDecisions is a repeatedly used validation set. Real final-test gaps and size-specific SOTA are unknown.
-- Failed / ruled out: Hugging Face direct commit and PR merge returned HTTP 403, requiring organization write permission; no changes to main-branch cards were claimed. Do not call public validation numbers independent acceptance.
-- Next: establish runnable competitor baselines while awaiting model-card write access or PR merges; resolve source and label review before using candidates marked NOT_FOR_TRAINING.
+- Failed / ruled out: the local Hugging Face API token returned HTTP 403 for direct commits and PR merges; the separately authorized administrator browser session merged the PRs. Do not call public validation numbers independent acceptance.
+- Next: establish runnable competitor baselines; resolve source and label review before using candidates marked NOT_FOR_TRAINING.
